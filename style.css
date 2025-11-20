@@ -1,0 +1,64 @@
+/* ----------------------------------------------------
+   StudySync - Modern Light Theme
+------------------------------------------------------- */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #eee;
+}
+
+/* Cards */
+.card {
+    border-radius: 12px;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #3d7afe;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1d5dfc;
+}
+
+/* Task cards in view-task */
+.task-card {
+    border-radius: 12px;
+    border-left: 6px solid #3d7afe;
+    transition: 0.2s;
+}
+
+.task-card.completed {
+    border-left-color: #2ecc71;
+    background-color: #e9f9ef;
+}
+
+.task-card.pending {
+    background-color: #f0f6ff;
+}
+
+/* Admin List */
+#adminTaskList .card {
+    border-left: 6px solid #3d7afe;
+}
+
+/* Logs */
+#logList li {
+    font-size: 15px;
+}
+
+/* Smooth transitions */
+* {
+    transition: 0.15s ease;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync - Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-light text-dark">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+         stroke="#3D7AFE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+         class="me-2">
+        <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+        <path d="M3 10h18"></path>
+        <path d="M9 16h6"></path>
+    </svg>
+
+    <span style="font-weight: 700; font-size: 22px;">
+        Study<span style="color:#3D7AFE;">Sync</span>
+    </span>
+</a>
+
+
+        <div>
+            <a href="add-task.html" class="btn btn-primary btn-sm">Add Task</a>
+            <a href="subjects.html" class="btn btn-outline-primary btn-sm">Subjects</a>
+            <a href="admin/dashboard.html" class="btn btn-dark btn-sm">Admin</a>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+
+    <h2 class="fw-bold mb-4">Your Study Dashboard</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <small class="text-muted">Total Tasks</small>
+                <h3 id="totalTasks" class="fw-bold">0</h3>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <small class="text-muted">Upcoming</small>
+                <h3 id="upcomingTasks" class="fw-bold">0</h3>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <small class="text-muted">Completed</small>
+                <h3 id="completedTasks" class="fw-bold">0</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mt-5">
+        <a href="view-task.html" class="btn btn-primary">View All Tasks</a>
+    </div>
+
+</main>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/subjects.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
